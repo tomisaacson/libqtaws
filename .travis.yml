@@ -4,6 +4,10 @@ before_install:
   - sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
   - sudo apt-get update -qq
   - sudo apt-get install -qq qt5-qmake qtbase5-dev
+  - wget http://download.qt-project.org/official_releases/qt/5.1/5.1.1/qt-linux-opensource-5.1.1-x86_64-offline.run
+  - chmod a+x qt-linux-opensource-5.1.1-x86_64-offline.run
+  - sudo ./qt-linux-opensource-5.1.1-x86_64-offline.run --help
+  - false
 
 before_script:
   - qmake -qt=qt5 -v
