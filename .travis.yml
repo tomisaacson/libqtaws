@@ -2,7 +2,7 @@ language: cpp
 
 before_install:
   - cat /etc/apt/sources.list
-  - sed -i -re 's/precise/saucy/g' /etc/apt/sources.list
+  - sudo sed -i -re 's/precise/saucy/g' /etc/apt/sources.list
   - cat /etc/apt/sources.list
   - lsb_release -d
   - sudo add-apt-repository --yes ppa:canonical-qt5-edgers/qt5-beta-proper
