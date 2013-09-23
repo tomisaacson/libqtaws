@@ -6,7 +6,7 @@ before_install:
   - sudo apt-get update -qq
   - sudo apt-get dist-upgrade -qq
   - lsb_release -d
-  - do-release-upgrade
+  - sudo do-release-upgrade
   - lsb_release -d
   - sudo apt-get install -qq qt5-qmake-5.1.1 qtbase5-dev-5.1.1
 
